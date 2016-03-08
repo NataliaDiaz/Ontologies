@@ -1,0 +1,1175 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#"
+     xml:base="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#IsFamilyOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#IsFamilyOf">
+        <rdf:type rdf:resource="&owl;InverseFunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#User"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#User"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#ProvidesData -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#ProvidesData">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#DataProvider"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#MedicalData"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasActiveRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasActiveRole">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Role"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#User"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasAddress -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasAddress">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasData"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasCitizenship -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasCitizenship">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasData"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasCredential -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasCredential">
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Credential"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#User"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasData -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasData">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Data"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#User"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasEmail -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasEmail">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasData"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasGender -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasGender">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasData"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasMedicalHistory -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasMedicalHistory">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasData"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasModifyPermissionOfCredential -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasModifyPermissionOfCredential">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Credential"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#User"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasPermission"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasOwner -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasOwner">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Data"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#User"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasData"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasPermission -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasPermission"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasProhibition -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasProhibition"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasProvenance -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasProvenance">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#DataProvider"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#MedicalData"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#ProvidesData"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasRole -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasRole">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Role"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#User"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasSSN -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasSSN">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasData"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasTrustLevel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasTrustLevel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Credential"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#TrustLevel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#roleHasDeletePermissionOverData -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#roleHasDeletePermissionOverData">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Data"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Role"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasPermission"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#roleHasDeleteProhibitionOverData -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#roleHasDeleteProhibitionOverData">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Data"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Role"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasProhibition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#roleHasReadPermissionOverData -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#roleHasReadPermissionOverData">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Data"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Role"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasPermission"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#roleHasReadProhibitionOverData -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#roleHasReadProhibitionOverData">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Data"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Role"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasProhibition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#roleHasUpdatePermissionOverData -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#roleHasUpdatePermissionOverData">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Data"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Role"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasPermission"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#roleHasUpdateProhibitionOverData -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#roleHasUpdateProhibitionOverData">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Data"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Role"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasProhibition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#roleHasWritePermissionOverData -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#roleHasWritePermissionOverData">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Data"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Role"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasPermission"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#roleHasWriteProhibitionOverData -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#roleHasWriteProhibitionOverData">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Data"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Role"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasProhibition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#userHasDeletePermissionOverData -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#userHasDeletePermissionOverData">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Data"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#User"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasPermission"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#userHasDeleteProhibitionOverData -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#userHasDeleteProhibitionOverData">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Data"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#User"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasProhibition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#userHasReadPermissionOverData -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#userHasReadPermissionOverData">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Data"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#User"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasPermission"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#userHasReadProhibitionOverData -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#userHasReadProhibitionOverData">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Data"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#User"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasProhibition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#userHasUpdatePermissionOverData -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#userHasUpdatePermissionOverData">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasPermission"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#userHasUpdateProhibitionOverData -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#userHasUpdateProhibitionOverData">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Data"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#User"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasProhibition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#userHasWritePermissionOverData -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#userHasWritePermissionOverData">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Data"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#User"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasPermission"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#userHasWriteProhibitionOverData -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#userHasWriteProhibitionOverData">
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Data"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#User"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasProhibition"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasAnonimizationID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasAnonimizationID">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#PersonalData"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasDescription">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#MedicalData"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasTimestamp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasTimestamp">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Data"/>
+        <rdfs:range rdf:resource="&xsd;dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasValue">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Data"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#heartrate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#heartrate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#SleepQuality"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#movements -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#movements">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#SleepQuality"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#respirations -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#respirations">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#SleepQuality"/>
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#AboAcademy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#AboAcademy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Address -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Address">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#PersonalData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Affectiva -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Affectiva">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Sensor"/>
+        <rdfs:comment>Stress Level Sensor</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Beddit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Beddit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Sensor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Biometric -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Biometric">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Credential"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#BloodPressure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#BloodPressure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#MedicalData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Calendar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Calendar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#DataProvider"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Citizenship -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Citizenship">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#PersonalData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Credential -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Credential"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#CreditCard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#CreditCard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#IDCard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Data -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Data">
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Role"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#User"/>
+        </owl:disjointUnionOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#DataProvider -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#DataProvider"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Doctor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Doctor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#E-Passport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#E-Passport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#SmartCard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Email -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Email">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#PersonalData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#FacialImage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#FacialImage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Biometric"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#FingerPrint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#FingerPrint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Biometric"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Fitbit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Fitbit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Sensor"/>
+        <rdfs:comment>Sensor for detecting n of stairs climbed, n of calories spent, n of steps walked and sleeping time</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#GPS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#GPS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#DataProvider"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Gender -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Gender">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#PersonalData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#HeartRate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#HeartRate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#MedicalData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#IDCard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#IDCard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Credential"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Kinect -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Kinect">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#DataProvider"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Location">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#MedicalData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#MedicalData -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#MedicalData">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Data"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#MedicalHistory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#MedicalHistory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#PersonalData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Nurse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Nurse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Passport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Passport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#IDCard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Password -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Password">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#SimpleCredential"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Patient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Patient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#PersonalData -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#PersonalData">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Data"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#RFIDTag -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#RFIDTag">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#SmartCard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Role -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Role">
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Data"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#User"/>
+        </owl:disjointUnionOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#SSN -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#SSN">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#PersonalData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Sensor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Sensor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#DataProvider"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#SimpleCredential -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#SimpleCredential">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Credential"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#SleepQuality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#SleepQuality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#MedicalData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#SmartCard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#SmartCard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Credential"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#StressLevel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#StressLevel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#MedicalData"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#TrustLevel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#TrustLevel"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#User -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#User">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#hasRole"/>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Role"/>
+                <owl:minQualifiedCardinality rdf:datatype="&xsd;nonNegativeInteger">1</owl:minQualifiedCardinality>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Data"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Role"/>
+        </owl:disjointUnionOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#AAEmployee -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#AAEmployee">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#AboAcademy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#AAStudent -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#AAStudent">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#AboAcademy"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#AddressCoralie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#AddressCoralie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Address"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#AddressShohreh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#AddressShohreh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Address"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#AffectivaNatalia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#AffectivaNatalia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Affectiva"/>
+        <rdfs:comment></rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#AffectivaShohreh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#AffectivaShohreh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Affectiva"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#BedditNatalia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#BedditNatalia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Beddit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#BedditShohreh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#BedditShohreh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Beddit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#BloodPressureShohreh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#BloodPressureShohreh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#BloodPressure"/>
+        <hasOwner rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Shohreh"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#CalendarNatalia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#CalendarNatalia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Calendar"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#CalendarShohreh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#CalendarShohreh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Calendar"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Coralie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Coralie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#PersonalData"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#User"/>
+        <hasRole rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#DoctorAtRehabilitationWard"/>
+        <hasRole rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#DoctorAtTYKS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#DoctorAtRehabilitationWard -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#DoctorAtRehabilitationWard">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Doctor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#DoctorAtTYKS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#DoctorAtTYKS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Doctor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#EmailNatalia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#EmailNatalia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Email"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#EmailShohreh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#EmailShohreh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Email"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Female -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Female">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Gender"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#FitbitNatalia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#FitbitNatalia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Fitbit"/>
+        <rdfs:comment>The Data that is sensed by the sensors.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#FitbitShohreh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#FitbitShohreh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Fitbit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#GPSNatalia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#GPSNatalia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#GPS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#GPSShohreh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#GPSShohreh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#GPS"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#HeartRateShohreh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#HeartRateShohreh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#HeartRate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#High -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#High">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#TrustLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#KinectNatalia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#KinectNatalia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Kinect"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#KinectShohreh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#KinectShohreh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Kinect"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#LocationCoralie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#LocationCoralie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Location"/>
+        <hasOwner rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Coralie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#LocationNatalia1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#LocationNatalia1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#LocationNatalia2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#LocationNatalia2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#LocationNatalia3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#LocationNatalia3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#LocationShohreh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#LocationShohreh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Location"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Low -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Low">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#TrustLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Male -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Male">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Gender"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Medium -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Medium">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#TrustLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Natalia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Natalia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#PersonalData"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#User"/>
+        <hasRole rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#NurseAtTYKS"/>
+        <userHasWritePermissionOverData rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#StressLevelNatalia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#NurseAtTYKS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#NurseAtTYKS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Nurse"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Piezoelectric -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Piezoelectric">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Sensor"/>
+        <rdfs:comment>Movement Sensor</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#RehabilitationPatient -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#RehabilitationPatient">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Patient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#SSNCoralie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#SSNCoralie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#SSN"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#SSNNatalia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#SSNNatalia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#SSN"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#SSNShohreh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#SSNShohreh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#SSN"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#SelfConciousPatient -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#SelfConciousPatient">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Patient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Shohreh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Shohreh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#User"/>
+        <hasRole rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#AAEmployee"/>
+        <hasRole rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#RehabilitationPatient"/>
+        <hasRole rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#SelfConciousPatient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#StressLevelCoralie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#StressLevelCoralie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#StressLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#StressLevelNatalia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#StressLevelNatalia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#StressLevel"/>
+        <hasValue rdf:datatype="&xsd;string">8</hasValue>
+        <hasDescription rdf:datatype="&xsd;string">Measures the stress level. Given by device Affectiva wrist sensor.</hasDescription>
+        <hasOwner rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Shohreh"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#StressPatient -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#StressPatient">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shohreh/ontologies/2013/6/untitled-ontology-7#Patient"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

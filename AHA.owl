@@ -1,0 +1,592 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY AHA "http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#" >
+    <!ENTITY AHA2 "http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#3" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#"
+     xml:base="http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:AHA="http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:AHA2="&AHA;3">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#">
+        <rdfs:comment rdf:datatype="&xsd;string">AHA Ontology v.0
+Preliminar Ontology for the AHA (Active Healthy Ageing) Platform.
+
+Author: Natalia Diaz Rodriguez (diaz@abo.fi)
+Abo Akademi University, Finland. August 2013
+
+</rdfs:comment>
+        <owl:versionIRI rdf:resource="http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#executesSitStandSession -->
+
+    <owl:ObjectProperty rdf:about="&AHA;executesSitStandSession">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:subPropertyOf rdf:resource="&AHA;performsActivity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#exposedToAmbientLight -->
+
+    <owl:ObjectProperty rdf:about="&AHA;exposedToAmbientLight">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&AHA;AmbientLight"/>
+        <rdfs:domain rdf:resource="&AHA;Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#hasActivityLevel -->
+
+    <owl:ObjectProperty rdf:about="&AHA;hasActivityLevel">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&AHA;ActivityLevel"/>
+        <rdfs:domain rdf:resource="&AHA;Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#hasBodyAcceleration -->
+
+    <owl:ObjectProperty rdf:about="&AHA;hasBodyAcceleration">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&AHA;3DAcceleration"/>
+        <rdfs:domain rdf:resource="&AHA;Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#hasGCI -->
+
+    <owl:ObjectProperty rdf:about="&AHA;hasGCI">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="&AHA;Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#hasSkinTemperature -->
+
+    <owl:ObjectProperty rdf:about="&AHA;hasSkinTemperature">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="&AHA;Person"/>
+        <rdfs:range rdf:resource="&AHA;Temperature"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#hasValence -->
+
+    <owl:ObjectProperty rdf:about="&AHA;hasValence">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="&AHA;Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#performsActivity -->
+
+    <owl:ObjectProperty rdf:about="&AHA;performsActivity">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&AHA;Activity"/>
+        <rdfs:domain rdf:resource="&AHA;Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#sensingAppliesToBodyPosition -->
+
+    <owl:ObjectProperty rdf:about="&AHA;sensingAppliesToBodyPosition">
+        <rdf:type rdf:resource="&owl;AsymmetricProperty"/>
+        <rdf:type rdf:resource="&owl;IrreflexiveProperty"/>
+        <rdfs:range rdf:resource="&AHA;BodyPosition"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&AHA;3DAcceleration"/>
+                    <rdf:Description rdf:about="&AHA;SkinConductance"/>
+                    <rdf:Description rdf:about="&AHA;Temperature"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#consistsOfNSits -->
+
+    <owl:DatatypeProperty rdf:about="&AHA;consistsOfNSits">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&AHA;SitStandSession"/>
+        <rdfs:subPropertyOf rdf:resource="&AHA;executedNrepetitions"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#executedNrepetitions -->
+
+    <owl:DatatypeProperty rdf:about="&AHA;executedNrepetitions">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:comment rdf:datatype="&xsd;string">Number of Sitting-Standing repetitions</rdfs:comment>
+        <rdfs:domain rdf:resource="&AHA;RehabilitationExercise"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#exposedToAmbientTemperature -->
+
+    <owl:DatatypeProperty rdf:about="&AHA;exposedToAmbientTemperature">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&AHA;Person"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#hasAccelerationValueX -->
+
+    <owl:DatatypeProperty rdf:about="&AHA;hasAccelerationValueX">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:comment rdf:datatype="&xsd;string">16 bit per dimension (range per dimension  -100g-100g); 
+body position: thigh, waist, chest, left_wrist, right wrist</rdfs:comment>
+        <rdfs:domain rdf:resource="&AHA;3DAcceleration"/>
+        <rdfs:subPropertyOf rdf:resource="&AHA;hasValue"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#hasAccelerationValueY -->
+
+    <owl:DatatypeProperty rdf:about="&AHA;hasAccelerationValueY">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:comment rdf:datatype="&xsd;string">16 bit per dimension (range per dimension  -100g-100g); 
+body position: thigh, waist, chest, left_wrist, right wrist</rdfs:comment>
+        <rdfs:domain rdf:resource="&AHA;3DAcceleration"/>
+        <rdfs:subPropertyOf rdf:resource="&AHA;hasValue"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#hasAccelerationValueZ -->
+
+    <owl:DatatypeProperty rdf:about="&AHA;hasAccelerationValueZ">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:comment rdf:datatype="&xsd;string">16 bit per dimension (range per dimension  -100g-100g); 
+body position: thigh, waist, chest, left_wrist, right wrist</rdfs:comment>
+        <rdfs:domain rdf:resource="&AHA;3DAcceleration"/>
+        <rdfs:subPropertyOf rdf:resource="&AHA;hasValue"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#hasDuration -->
+
+    <owl:DatatypeProperty rdf:about="&AHA;hasDuration">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&AHA;Activity"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#hasEnergyExpenditure -->
+
+    <owl:DatatypeProperty rdf:about="&AHA;hasEnergyExpenditure">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&AHA;Person"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#hasHeartRate -->
+
+    <owl:DatatypeProperty rdf:about="&AHA;hasHeartRate">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&AHA;Person"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#hasSkinConductance -->
+
+    <owl:DatatypeProperty rdf:about="&AHA;hasSkinConductance">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&AHA;Person"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#hasSkinConductanceValue -->
+
+    <owl:DatatypeProperty rdf:about="&AHA;hasSkinConductanceValue">
+        <rdfs:comment rdf:datatype="&xsd;int">Event occurence (stream/person): 2 Hz
+In uS, 16 bit unsigned integer</rdfs:comment>
+        <rdfs:domain rdf:resource="&AHA;SkinConductance"/>
+        <rdfs:subPropertyOf rdf:resource="&AHA;hasValue"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#hasStartDateTime -->
+
+    <owl:DatatypeProperty rdf:about="&AHA;hasStartDateTime">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&AHA;Activity"/>
+        <rdfs:range rdf:resource="&xsd;dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#hasStressLevel -->
+
+    <owl:DatatypeProperty rdf:about="&AHA;hasStressLevel">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&AHA;Person"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#hasTemperatureValue -->
+
+    <owl:DatatypeProperty rdf:about="&AHA;hasTemperatureValue">
+        <rdfs:domain rdf:resource="&AHA;Temperature"/>
+        <rdfs:subPropertyOf rdf:resource="&AHA;hasValue"/>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#hasValue -->
+
+    <owl:DatatypeProperty rdf:about="&AHA;hasValue">
+        <rdfs:range rdf:resource="&xsd;int"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&AHA;SkinConductance"/>
+                    <rdf:Description rdf:about="&AHA;Temperature"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#tookAvgSecondsToSit -->
+
+    <owl:DatatypeProperty rdf:about="&AHA;tookAvgSecondsToSit">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&AHA;SitStandSession"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#tookAvgSecondsToStand -->
+
+    <owl:DatatypeProperty rdf:about="&AHA;tookAvgSecondsToStand">
+        <rdf:type rdf:resource="&owl;FunctionalProperty"/>
+        <rdfs:domain rdf:resource="&AHA;SitStandSession"/>
+        <rdfs:range rdf:resource="&xsd;float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#3DAcceleration -->
+
+    <owl:Class rdf:about="&AHA;3DAcceleration">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#Activity -->
+
+    <owl:Class rdf:about="&AHA;Activity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#ActivityLevel -->
+
+    <owl:Class rdf:about="&AHA;ActivityLevel"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#AmbientLight -->
+
+    <owl:Class rdf:about="&AHA;AmbientLight"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#AmbientTemperature -->
+
+    <owl:Class rdf:about="&AHA;AmbientTemperature">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#BodyPosition -->
+
+    <owl:Class rdf:about="&AHA;BodyPosition"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#BodyPositionForAccelerometer -->
+
+    <owl:Class rdf:about="&AHA;BodyPositionForAccelerometer">
+        <rdfs:subClassOf rdf:resource="&AHA;BodyPosition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#BodyPositionForSkinConductance -->
+
+    <owl:Class rdf:about="&AHA;BodyPositionForSkinConductance">
+        <rdfs:subClassOf rdf:resource="&AHA;BodyPosition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#BodyPositionForTemperature -->
+
+    <owl:Class rdf:about="&AHA;BodyPositionForTemperature">
+        <rdfs:subClassOf rdf:resource="&AHA;BodyPosition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#GHI -->
+
+    <owl:Class rdf:about="&AHA;GHI">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+        <rdfs:comment rdf:datatype="&xsd;string">General Health Index
+Based on the Sitting-Standing exercise and:
+-The number of sit-ups repetitions done per session
+-Average time of SitToStand  execution
+-Average time of StandToSit execution
+-Average number of days per month of exercise execution</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#Person -->
+
+    <owl:Class rdf:about="&AHA;Person">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#RehabilitationExercise -->
+
+    <owl:Class rdf:about="&AHA;RehabilitationExercise">
+        <rdfs:subClassOf rdf:resource="&AHA;Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#SitStandSession -->
+
+    <owl:Class rdf:about="&AHA;SitStandSession">
+        <rdfs:subClassOf rdf:resource="&AHA;Activity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#SkinConductance -->
+
+    <owl:Class rdf:about="&AHA;SkinConductance">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#Temperature -->
+
+    <owl:Class rdf:about="&AHA;Temperature">
+        <rdfs:subClassOf rdf:resource="&owl;Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#Chest -->
+
+    <owl:NamedIndividual rdf:about="&AHA;Chest">
+        <rdf:type rdf:resource="&AHA;BodyPosition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#LeftBodyPosition -->
+
+    <owl:NamedIndividual rdf:about="&AHA;LeftBodyPosition">
+        <rdf:type rdf:resource="&AHA;BodyPosition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#LeftWrist -->
+
+    <owl:NamedIndividual rdf:about="&AHA;LeftWrist">
+        <rdf:type rdf:resource="&AHA;BodyPosition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#Natalia -->
+
+    <owl:NamedIndividual rdf:about="&AHA;Natalia">
+        <rdf:type rdf:resource="&AHA;Person"/>
+        <executesSitStandSession rdf:resource="&AHA;SitStandSessionNatalia"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#RightBodyPosition -->
+
+    <owl:NamedIndividual rdf:about="&AHA;RightBodyPosition">
+        <rdf:type rdf:resource="&AHA;BodyPosition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#RightWrist -->
+
+    <owl:NamedIndividual rdf:about="&AHA;RightWrist">
+        <rdf:type rdf:resource="&AHA;BodyPosition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#SitStandSessionNatalia -->
+
+    <owl:NamedIndividual rdf:about="&AHA;SitStandSessionNatalia">
+        <rdf:type rdf:resource="&AHA;SitStandSession"/>
+        <tookAvgSecondsToStand rdf:datatype="&xsd;float">0.8</tookAvgSecondsToStand>
+        <tookAvgSecondsToSit rdf:datatype="&xsd;float">2.0</tookAvgSecondsToSit>
+        <hasStartDateTime rdf:datatype="&xsd;dateTime">2009-11-22T00:00:00</hasStartDateTime>
+        <consistsOfNSits rdf:datatype="&xsd;int">8</consistsOfNSits>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#Thigh -->
+
+    <owl:NamedIndividual rdf:about="&AHA;Thigh">
+        <rdf:type rdf:resource="&AHA;BodyPosition"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2013/7/17/AHA.owl#Waist -->
+
+    <owl:NamedIndividual rdf:about="&AHA;Waist">
+        <rdf:type rdf:resource="&AHA;BodyPosition"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+

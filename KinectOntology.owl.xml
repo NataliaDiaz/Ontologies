@@ -1,0 +1,3798 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ontologies/2013/2/KinectOntology.owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     ontologyIRI="http://www.semanticweb.org/ontologies/2013/2/KinectOntology.owl">
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal datatypeIRI="&xsd;string">The Kinect Ontology
+September  2013
+
+Díaz Rodríguez, N., Wikström, R., Lilius, J., Cuéllar, M.P., and Delgado Calvo-Flores, M.
+
+Department of Information Technologies, Åbo Akademi University, Turku (Finland)
+Department of Computer Science and Artificial Intelligence, University of Granada (Spain)
+
+
+____________________________________________________________________________
+</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Action"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ActiveUser"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Activity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AerobicExercise"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AlignDepthToReconstruction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Angle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Arm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Back"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Backpack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bag"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Beamforming"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bend"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BendAnkle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BendDown"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BendElbow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BendFinger"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BendKnee"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BendLeg"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BendToe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BendTrunk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BendUp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BodyMovement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BodyPart"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BoneJoint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Book"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bottle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Building"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CaressObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chair"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClickObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Colour"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Computer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Control"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Corridor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DefaultTrackingMode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DesktopComputer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Device"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Dictation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Door"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Draw"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DrawWithFoot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DrawWithHand"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DrinkingGlass"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElevateArmBack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElevateArmDown"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElevateArmFront"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElevateArmLeft"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElevateArmRight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElevateArmUp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElevateFootBack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElevateFootDown"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElevateFootFront"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElevateFootLeft"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElevateFootRight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElevateFootUp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElevateKneeBack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElevateKneeDown"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElevateKneeFront"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElevateKneeLeft"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElevateKneeRight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElevateKneeUp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ElevateObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Exercise"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExerciseDifficulty"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExerciseFrequency"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExerciseIntensity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExerciseQuality"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Extend"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExtendLegBack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExtendLegDown"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExtendLegFront"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExtendLegLeft"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExtendLegRight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExtendLegUp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Forniture"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Frame"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GrabObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grammar"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Grip"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GrippingUser"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GymWorkout"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hand"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HandBag"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HandState"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Image"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ImageControl"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Indication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InteractingUser"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InteractionStream"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#InteractiveHand"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Keyboard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kinect3DModel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Kinect3DVolume"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KinectAudio"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KinectInteraction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#KinectSensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Language"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Laptop"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Location"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mouse"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MoveObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mug"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Neck"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Notebook"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NuiFusionAlignPointClouds"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Object"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ObjectAction"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Orientation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pen"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pencil"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Phone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Press"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PressObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PressingUser"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrimaryHand"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PrimaryUser"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PushObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RehabilitationExercise"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Release"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ReleaseObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Room"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rotate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RotateArm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RotateHip"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RotateLeg"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RotateLegAxisAntiClockwise"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RotateLegAxisClockwise"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RotateNeck"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RotateObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RotateObjectAnticlockwise"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RotateObjectClockwise"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RotateShoulder"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#RotateWrist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Scroll"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SeatedTrackingMode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SeatingUser"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sensor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sit"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SitStandSession"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Skeleton"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Sofa"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SourceLocation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Speech"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SpeechRecognitionEngine"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stand"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StandingUser"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Stretching"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Table"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TextControl"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TouchObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TrackedHand"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TrackedUser"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TrackingMode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TrainingExercise"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TranslateObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TranslateObjectHorizontally"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TranslateObjectVertically"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TwistLeft"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TwistRight"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#User"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VideoControl"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Walk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Window"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#activatedByInteraction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#belongsToKinectSensor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#bindsToControl"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#creates3DModel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#createsVolume"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#detectsUser"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#executesBodyMovement"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#executesObjectAction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#generatedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#generatesInteractionStream"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasArm"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasArmState"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAvgQuality"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBeamforming"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasBoneHierarchy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasChildJoint"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasColour"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCurrentLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCurrentOrientation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDifficulty"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasHand"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasHandState"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasIndication"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasInitialStartingFrame"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLanguage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLeftArm"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLoadedGrammar"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLocationDirection"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLocationWithinPHIZ"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasParentJoint"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPartialColor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPrimaryHand"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRightArm"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSourceLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSpeechRecognitionEngine"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#involvesAngle"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isBeingTrackedWithinPHIZ"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isComposedByAction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isObservedByKinectInteraction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPerformedByHand"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isProgrammedForFrequency"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isTargetOfKinectInteraction"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#observesHand"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#performsControl"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#performsExercise"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#recognizesSpeech"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#representedInSkeleton"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#representsUser"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#suppliedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#suppliesInteractionFrame"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#targetsControl"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#wasPerformedWithIntensity"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#containsVolumeInL"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hadAngleValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hadAvgTimePerRepetition"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasActiveTrackingMode"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAngleDatetime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAngleProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAngleValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasApertureAngle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasConfidenceLevel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasConfidenceThreshold"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDateTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasEndDateTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasExerciseProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasGrammarDefinitionXMLFile"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasHeightInCm"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasKinectAudioSource"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLongitudeInCm"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasNVoxels"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasObjectMeasurement"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasOrientationProperty"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasOrientationX"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasOrientationY"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasOrientationZ"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRecognitionAccuracy"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSize"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasSpatialRelation"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasStartDateTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasState"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTimestamp"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasUserID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasVolumeInM3"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasVoxelResolution"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasWidth"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasWidthInCm"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasWidthInM"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#headNeckAngle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isActive"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isAimedAtAgeGroup"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isCaptured"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isInteractive"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isPrimaryHand"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isPrimaryUser"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isProgrammedForDurationInHour"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isProgrammedForDurationInMin"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isProgrammedForDurationInSec"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isProgrammedForNRepetitions"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isTracked"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#shouldBeExactlyInDegrees"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#shouldBeMaxInDegrees"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#shouldBeMinInDegrees"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#spineLeftKneeAngle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#spineRightKneeAngle"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#usesAlgorithmAlignDepthToReconstruction"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#usesAlgorithmNuiFusionAlignPointClouds"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#wasRepeatedNTimes"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AgainstNeckPain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AnkleLeft"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AnkleRight"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ArmLeftBone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ArmRightBone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#AverageQuality"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BackLowerBone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BackRehabilitationExercise"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BackUpperBone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#BadQuality"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Black"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Blue"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Brown"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CalfLeftBone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CalfRightBone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ClickDoorStatusDisplayButton"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ClickMouse"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Daily"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#DropJacket"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EasyDifficulty"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ElbowLeft"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ElbowRight"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ElevatePlateIntoMicrowave"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ExcellentQuality"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FootLeft"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FootLeftBone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FootRight"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#FootRightBone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ForearmLeftBone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ForearmRightBone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GoodQuality"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Green"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#GrippingHandState"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HandLeft"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HandLeftBone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HandRight"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HandRightBone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HardDifficulty"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Head"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HighFrequency"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HighIntensity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HipCenter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HipLeft"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HipRight"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#InteractiveHandState"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KeppijumppaStretching"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KneeLeft"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#KneeRight"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LowFrequency"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LowIntensity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MediumDifficulty"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MediumFrequency"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MediumIntensity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Monthly"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#NeckBone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Orange"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PelvisLeftBone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PelvisRightBone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#PressingHandState"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Purple"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Red"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ReleaseBackpack"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RotateAndCloseBottleCap"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#RotateAndOpenBottleCap"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ShoulderCenter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ShoulderLeft"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ShoulderLeftBone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ShoulderRight"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ShoulderRightBone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SittingQuality"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Spine"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#StandingQuality"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ThighLeftBone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ThighRightBone"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TranslateCoffeeMug"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#TwoTimesAWeek"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#VeryBadQuality"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Weekly"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#White"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WristLeft"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#WristRight"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Yellow"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#en-AU"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#en-CA"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#en-ES"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#en-GB"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#en-IE"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#en-MX"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#en-NZ"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#fr-FR"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#fr-MX"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#it-IT"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#jp-JP"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#Hand"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Hand"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#isObservedByKinectInteraction"/>
+                <Class IRI="#KinectInteraction"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#InteractiveHand"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Hand"/>
+            <DataHasValue>
+                <DataProperty IRI="#isTracked"/>
+                <Literal datatypeIRI="&xsd;boolean">true</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="#PrimaryUser"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#User"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#hasPrimaryHand"/>
+                <Class IRI="#Hand"/>
+            </ObjectSomeValuesFrom>
+            <DataHasValue>
+                <DataProperty IRI="#isActive"/>
+                <Literal datatypeIRI="&xsd;boolean">true</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#ActiveUser"/>
+        <Class IRI="#User"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AerobicExercise"/>
+        <Class IRI="#Exercise"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#AlignDepthToReconstruction"/>
+        <Class IRI="#Kinect3DModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Arm"/>
+        <Class IRI="#BodyPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Back"/>
+        <Class IRI="#BodyPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Backpack"/>
+        <Class IRI="#Bag"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bag"/>
+        <Class IRI="#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Beamforming"/>
+        <Class abbreviatedIRI=":Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bend"/>
+        <Class IRI="#BodyMovement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BendAnkle"/>
+        <Class IRI="#Bend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BendDown"/>
+        <Class IRI="#Bend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BendElbow"/>
+        <Class IRI="#Bend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BendFinger"/>
+        <Class IRI="#Bend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BendKnee"/>
+        <Class IRI="#Bend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BendLeg"/>
+        <Class IRI="#Bend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BendToe"/>
+        <Class IRI="#Bend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BendTrunk"/>
+        <Class IRI="#Bend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BendUp"/>
+        <Class IRI="#Bend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BodyMovement"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bone"/>
+        <Class IRI="#BodyPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BoneJoint"/>
+        <Class IRI="#BodyPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Book"/>
+        <Class IRI="#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bottle"/>
+        <Class IRI="#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Building"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CaressObject"/>
+        <Class IRI="#TouchObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Chair"/>
+        <Class IRI="#Forniture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClickObject"/>
+        <Class IRI="#TouchObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Computer"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Control"/>
+        <Class abbreviatedIRI=":Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Corridor"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DefaultTrackingMode"/>
+        <Class IRI="#TrackingMode"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DesktopComputer"/>
+        <Class IRI="#Computer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Device"/>
+        <Class IRI="#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Dictation"/>
+        <Class IRI="#Speech"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Door"/>
+        <Class IRI="#Forniture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Draw"/>
+        <Class IRI="#BodyMovement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DrawWithFoot"/>
+        <Class IRI="#Draw"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DrawWithHand"/>
+        <Class IRI="#Draw"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DrinkingGlass"/>
+        <Class IRI="#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElevateArmBack"/>
+        <Class IRI="#Extend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElevateArmDown"/>
+        <Class IRI="#Extend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElevateArmFront"/>
+        <Class IRI="#Extend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElevateArmLeft"/>
+        <Class IRI="#Extend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElevateArmRight"/>
+        <Class IRI="#Extend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElevateArmUp"/>
+        <Class IRI="#Extend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElevateFootBack"/>
+        <Class IRI="#Extend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElevateFootDown"/>
+        <Class IRI="#Extend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElevateFootFront"/>
+        <Class IRI="#Extend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElevateFootLeft"/>
+        <Class IRI="#Extend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElevateFootRight"/>
+        <Class IRI="#Extend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElevateFootUp"/>
+        <Class IRI="#Extend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElevateKneeBack"/>
+        <Class IRI="#Extend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElevateKneeDown"/>
+        <Class IRI="#Extend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElevateKneeFront"/>
+        <Class IRI="#Extend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElevateKneeLeft"/>
+        <Class IRI="#Extend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElevateKneeRight"/>
+        <Class IRI="#Extend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElevateKneeUp"/>
+        <Class IRI="#Extend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ElevateObject"/>
+        <Class IRI="#TouchObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Exercise"/>
+        <Class IRI="#Activity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Extend"/>
+        <Class IRI="#BodyMovement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExtendLegBack"/>
+        <Class IRI="#Extend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExtendLegDown"/>
+        <Class IRI="#Extend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExtendLegFront"/>
+        <Class IRI="#Extend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExtendLegLeft"/>
+        <Class IRI="#Extend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExtendLegRight"/>
+        <Class IRI="#Extend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ExtendLegUp"/>
+        <Class IRI="#Extend"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Forniture"/>
+        <Class IRI="#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Frame"/>
+        <Class IRI="#Image"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GrabObject"/>
+        <Class IRI="#TouchObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grammar"/>
+        <Class abbreviatedIRI=":Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Grip"/>
+        <Class IRI="#KinectInteraction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GrippingUser"/>
+        <Class IRI="#User"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GymWorkout"/>
+        <Class IRI="#Exercise"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hand"/>
+        <Class IRI="#BodyPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HandBag"/>
+        <Class IRI="#Bag"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ImageControl"/>
+        <Class IRI="#Control"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InteractingUser"/>
+        <Class IRI="#User"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#InteractiveHand"/>
+        <Class IRI="#Hand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Keyboard"/>
+        <Class IRI="#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Kinect3DVolume"/>
+        <Class abbreviatedIRI=":Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KinectAudio"/>
+        <Class abbreviatedIRI=":Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KinectInteraction"/>
+        <Class abbreviatedIRI=":Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#KinectSensor"/>
+        <Class IRI="#Sensor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Language"/>
+        <Class abbreviatedIRI=":Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laptop"/>
+        <Class IRI="#Computer"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Location"/>
+        <Class abbreviatedIRI=":Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mouse"/>
+        <Class IRI="#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MoveObject"/>
+        <Class IRI="#TouchObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mug"/>
+        <Class IRI="#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Neck"/>
+        <Class IRI="#BodyPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Notebook"/>
+        <Class IRI="#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NuiFusionAlignPointClouds"/>
+        <Class IRI="#Kinect3DModel"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Object"/>
+        <Class abbreviatedIRI=":Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ObjectAction"/>
+        <Class IRI="#Action"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Orientation"/>
+        <Class abbreviatedIRI=":Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pen"/>
+        <Class IRI="#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pencil"/>
+        <Class IRI="#Object"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Phone"/>
+        <Class IRI="#Device"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Press"/>
+        <Class IRI="#KinectInteraction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PressObject"/>
+        <Class IRI="#TouchObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PressingUser"/>
+        <Class IRI="#User"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrimaryHand"/>
+        <Class IRI="#Hand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PrimaryUser"/>
+        <Class IRI="#User"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PushObject"/>
+        <Class IRI="#TouchObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RehabilitationExercise"/>
+        <Class IRI="#Exercise"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Release"/>
+        <Class IRI="#KinectInteraction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ReleaseObject"/>
+        <Class IRI="#ObjectAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Room"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Rotate"/>
+        <Class IRI="#BodyMovement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RotateArm"/>
+        <Class IRI="#Rotate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RotateHip"/>
+        <Class IRI="#Rotate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RotateLeg"/>
+        <Class IRI="#Rotate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RotateLegAxisAntiClockwise"/>
+        <Class IRI="#Rotate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RotateLegAxisClockwise"/>
+        <Class IRI="#Rotate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RotateNeck"/>
+        <Class IRI="#Rotate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RotateObject"/>
+        <Class IRI="#ObjectAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RotateObjectAnticlockwise"/>
+        <Class IRI="#RotateObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RotateObjectClockwise"/>
+        <Class IRI="#RotateObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RotateShoulder"/>
+        <Class IRI="#Rotate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#RotateWrist"/>
+        <Class IRI="#Rotate"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scroll"/>
+        <Class IRI="#KinectInteraction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SeatedTrackingMode"/>
+        <Class IRI="#TrackingMode"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SeatingUser"/>
+        <Class IRI="#User"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sit"/>
+        <Class IRI="#BodyMovement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SitStandSession"/>
+        <Class IRI="#Exercise"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Skeleton"/>
+        <Class IRI="#BodyPart"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Sofa"/>
+        <Class IRI="#Forniture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SourceLocation"/>
+        <Class IRI="#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Speech"/>
+        <Class abbreviatedIRI=":Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SpeechRecognitionEngine"/>
+        <Class abbreviatedIRI=":Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stand"/>
+        <Class IRI="#BodyMovement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StandingUser"/>
+        <Class IRI="#User"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Stretching"/>
+        <Class IRI="#Exercise"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Table"/>
+        <Class IRI="#Forniture"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TextControl"/>
+        <Class IRI="#Control"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TouchObject"/>
+        <Class IRI="#ObjectAction"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrackedHand"/>
+        <Class IRI="#Hand"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrackedUser"/>
+        <Class IRI="#User"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrackingMode"/>
+        <Class abbreviatedIRI=":Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TrainingExercise"/>
+        <Class IRI="#Exercise"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TranslateObject"/>
+        <Class IRI="#TouchObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TranslateObjectHorizontally"/>
+        <Class IRI="#TranslateObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TranslateObjectVertically"/>
+        <Class IRI="#TranslateObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TwistLeft"/>
+        <Class IRI="#BodyMovement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TwistRight"/>
+        <Class IRI="#BodyMovement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#User"/>
+        <Class abbreviatedIRI=":Thing"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#VideoControl"/>
+        <Class IRI="#Control"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Walk"/>
+        <Class IRI="#BodyMovement"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Window"/>
+        <Class IRI="#Forniture"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#ActiveUser"/>
+        <Class IRI="#GrippingUser"/>
+        <Class IRI="#InteractingUser"/>
+        <Class IRI="#PressingUser"/>
+        <Class IRI="#SeatingUser"/>
+        <Class IRI="#StandingUser"/>
+        <Class IRI="#TrackedUser"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Bend"/>
+        <Class IRI="#Draw"/>
+        <Class IRI="#Extend"/>
+        <Class IRI="#Rotate"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#BendAnkle"/>
+        <Class IRI="#BendElbow"/>
+        <Class IRI="#BendFinger"/>
+        <Class IRI="#BendKnee"/>
+        <Class IRI="#BendLeg"/>
+        <Class IRI="#BendToe"/>
+        <Class IRI="#BendTrunk"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Bone"/>
+        <Class IRI="#Orientation"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CaressObject"/>
+        <Class IRI="#ClickObject"/>
+        <Class IRI="#ElevateObject"/>
+        <Class IRI="#GrabObject"/>
+        <Class IRI="#MoveObject"/>
+        <Class IRI="#PressObject"/>
+        <Class IRI="#PushObject"/>
+        <Class IRI="#TranslateObject"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#DrawWithFoot"/>
+        <Class IRI="#DrawWithHand"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#ElevateArmFront"/>
+        <Class IRI="#ElevateFootFront"/>
+        <Class IRI="#ElevateKneeFront"/>
+        <Class IRI="#ExtendLegFront"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Grip"/>
+        <Class IRI="#Press"/>
+        <Class IRI="#Release"/>
+        <Class IRI="#Scroll"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#KinectInteraction"/>
+        <Class IRI="#Skeleton"/>
+        <Class IRI="#TrackingMode"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#RotateArm"/>
+        <Class IRI="#RotateHip"/>
+        <Class IRI="#RotateLeg"/>
+        <Class IRI="#RotateNeck"/>
+        <Class IRI="#RotateShoulder"/>
+        <Class IRI="#RotateWrist"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#RotateObjectAnticlockwise"/>
+        <Class IRI="#RotateObjectClockwise"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#TranslateObjectHorizontally"/>
+        <Class IRI="#TranslateObjectVertically"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#BoneJoint"/>
+        <NamedIndividual IRI="#AnkleLeft"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BoneJoint"/>
+        <NamedIndividual IRI="#AnkleRight"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bone"/>
+        <NamedIndividual IRI="#ArmLeftBone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bone"/>
+        <NamedIndividual IRI="#ArmRightBone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExerciseQuality"/>
+        <NamedIndividual IRI="#AverageQuality"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bone"/>
+        <NamedIndividual IRI="#BackLowerBone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RehabilitationExercise"/>
+        <NamedIndividual IRI="#BackRehabilitationExercise"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bone"/>
+        <NamedIndividual IRI="#BackUpperBone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExerciseQuality"/>
+        <NamedIndividual IRI="#BadQuality"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Colour"/>
+        <NamedIndividual IRI="#Black"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Colour"/>
+        <NamedIndividual IRI="#Blue"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Colour"/>
+        <NamedIndividual IRI="#Brown"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bone"/>
+        <NamedIndividual IRI="#CalfLeftBone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bone"/>
+        <NamedIndividual IRI="#CalfRightBone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ClickObject"/>
+        <NamedIndividual IRI="#ClickDoorStatusDisplayButton"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ClickObject"/>
+        <NamedIndividual IRI="#ClickMouse"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExerciseFrequency"/>
+        <NamedIndividual IRI="#Daily"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ReleaseObject"/>
+        <NamedIndividual IRI="#DropJacket"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExerciseDifficulty"/>
+        <NamedIndividual IRI="#EasyDifficulty"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BoneJoint"/>
+        <NamedIndividual IRI="#ElbowLeft"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BoneJoint"/>
+        <NamedIndividual IRI="#ElbowRight"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ElevateObject"/>
+        <NamedIndividual IRI="#ElevatePlateIntoMicrowave"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExerciseQuality"/>
+        <NamedIndividual IRI="#ExcellentQuality"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BoneJoint"/>
+        <NamedIndividual IRI="#FootLeft"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bone"/>
+        <NamedIndividual IRI="#FootLeftBone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BoneJoint"/>
+        <NamedIndividual IRI="#FootRight"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bone"/>
+        <NamedIndividual IRI="#FootRightBone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bone"/>
+        <NamedIndividual IRI="#ForearmLeftBone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bone"/>
+        <NamedIndividual IRI="#ForearmRightBone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExerciseQuality"/>
+        <NamedIndividual IRI="#GoodQuality"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Colour"/>
+        <NamedIndividual IRI="#Green"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HandState"/>
+        <NamedIndividual IRI="#GrippingHandState"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BoneJoint"/>
+        <NamedIndividual IRI="#HandLeft"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bone"/>
+        <NamedIndividual IRI="#HandLeftBone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BoneJoint"/>
+        <NamedIndividual IRI="#HandRight"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bone"/>
+        <NamedIndividual IRI="#HandRightBone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExerciseDifficulty"/>
+        <NamedIndividual IRI="#HardDifficulty"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BoneJoint"/>
+        <NamedIndividual IRI="#Head"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExerciseFrequency"/>
+        <NamedIndividual IRI="#HighFrequency"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExerciseIntensity"/>
+        <NamedIndividual IRI="#HighIntensity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BoneJoint"/>
+        <NamedIndividual IRI="#HipCenter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BoneJoint"/>
+        <NamedIndividual IRI="#HipLeft"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BoneJoint"/>
+        <NamedIndividual IRI="#HipRight"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HandState"/>
+        <NamedIndividual IRI="#InteractiveHandState"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Stretching"/>
+        <NamedIndividual IRI="#KeppijumppaStretching"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BoneJoint"/>
+        <NamedIndividual IRI="#KneeLeft"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BoneJoint"/>
+        <NamedIndividual IRI="#KneeRight"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExerciseFrequency"/>
+        <NamedIndividual IRI="#LowFrequency"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExerciseIntensity"/>
+        <NamedIndividual IRI="#LowIntensity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExerciseDifficulty"/>
+        <NamedIndividual IRI="#MediumDifficulty"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExerciseFrequency"/>
+        <NamedIndividual IRI="#MediumFrequency"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExerciseIntensity"/>
+        <NamedIndividual IRI="#MediumIntensity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExerciseFrequency"/>
+        <NamedIndividual IRI="#Monthly"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bone"/>
+        <NamedIndividual IRI="#NeckBone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Colour"/>
+        <NamedIndividual IRI="#Orange"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bone"/>
+        <NamedIndividual IRI="#PelvisLeftBone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bone"/>
+        <NamedIndividual IRI="#PelvisRightBone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#HandState"/>
+        <NamedIndividual IRI="#PressingHandState"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Colour"/>
+        <NamedIndividual IRI="#Purple"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Colour"/>
+        <NamedIndividual IRI="#Red"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ReleaseObject"/>
+        <NamedIndividual IRI="#ReleaseBackpack"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RotateObject"/>
+        <NamedIndividual IRI="#RotateAndCloseBottleCap"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#RotateObject"/>
+        <NamedIndividual IRI="#RotateAndOpenBottleCap"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BoneJoint"/>
+        <NamedIndividual IRI="#ShoulderCenter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BoneJoint"/>
+        <NamedIndividual IRI="#ShoulderLeft"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bone"/>
+        <NamedIndividual IRI="#ShoulderLeftBone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BoneJoint"/>
+        <NamedIndividual IRI="#ShoulderRight"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bone"/>
+        <NamedIndividual IRI="#ShoulderRightBone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExerciseQuality"/>
+        <NamedIndividual IRI="#SittingQuality"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BoneJoint"/>
+        <NamedIndividual IRI="#Spine"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExerciseQuality"/>
+        <NamedIndividual IRI="#StandingQuality"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bone"/>
+        <NamedIndividual IRI="#ThighLeftBone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Bone"/>
+        <NamedIndividual IRI="#ThighRightBone"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#TranslateObject"/>
+        <NamedIndividual IRI="#TranslateCoffeeMug"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExerciseFrequency"/>
+        <NamedIndividual IRI="#TwoTimesAWeek"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExerciseQuality"/>
+        <NamedIndividual IRI="#VeryBadQuality"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExerciseFrequency"/>
+        <NamedIndividual IRI="#Weekly"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Colour"/>
+        <NamedIndividual IRI="#White"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BoneJoint"/>
+        <NamedIndividual IRI="#WristLeft"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BoneJoint"/>
+        <NamedIndividual IRI="#WristRight"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Colour"/>
+        <NamedIndividual IRI="#Yellow"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Language"/>
+        <NamedIndividual IRI="#en-AU"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Language"/>
+        <NamedIndividual IRI="#en-CA"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Language"/>
+        <NamedIndividual IRI="#en-ES"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Language"/>
+        <NamedIndividual IRI="#en-GB"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Language"/>
+        <NamedIndividual IRI="#en-IE"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Language"/>
+        <NamedIndividual IRI="#en-MX"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Language"/>
+        <NamedIndividual IRI="#en-NZ"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Language"/>
+        <NamedIndividual IRI="#fr-FR"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Language"/>
+        <NamedIndividual IRI="#fr-MX"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Language"/>
+        <NamedIndividual IRI="#it-IT"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Language"/>
+        <NamedIndividual IRI="#jp-JP"/>
+    </ClassAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#bindsToControl"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#creates3DModel"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#createsVolume"/>
+        <ObjectProperty IRI="#creates3DModel"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasLeftArm"/>
+        <ObjectProperty IRI="#hasArm"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPartialColor"/>
+        <ObjectProperty IRI="#hasColour"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasRightArm"/>
+        <ObjectProperty IRI="#hasArm"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#observesHand"/>
+        <ObjectProperty abbreviatedIRI=":topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasSpeechRecognitionEngine"/>
+        <ObjectProperty IRI="#belongsToKinectSensor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#observesHand"/>
+        <ObjectProperty IRI="#isObservedByKinectInteraction"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isPerformedByHand"/>
+        <ObjectProperty IRI="#performsControl"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#isTargetOfKinectInteraction"/>
+        <ObjectProperty IRI="#targetsControl"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#representsUser"/>
+        <ObjectProperty IRI="#representedInSkeleton"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#suppliedBy"/>
+        <ObjectProperty IRI="#suppliesInteractionFrame"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#bindsToControl"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#detectsUser"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#executesBodyMovement"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasAvgQuality"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasBeamforming"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasBoneHierarchy"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasColour"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasCurrentLocation"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasCurrentOrientation"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasDifficulty"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasIndication"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasInitialStartingFrame"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasLanguage"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasLoadedGrammar"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasLocationWithinPHIZ"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasPartialColor"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#involvesAngle"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isBeingTrackedWithinPHIZ"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#isTargetOfKinectInteraction"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#wasPerformedWithIntensity"/>
+    </FunctionalObjectProperty>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#hasPrimaryHand"/>
+    </SymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#activatedByInteraction"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#bindsToControl"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#creates3DModel"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#createsVolume"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#detectsUser"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#executesBodyMovement"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#executesObjectAction"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#generatedBy"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#generatesInteractionStream"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasArm"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasArmState"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasAvgQuality"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasBeamforming"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasBoneHierarchy"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasChildJoint"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasColour"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasCurrentLocation"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasCurrentOrientation"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasDifficulty"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasHand"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasHandState"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasIndication"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasInitialStartingFrame"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasLanguage"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasLeftArm"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasLoadedGrammar"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasLocationDirection"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasLocationWithinPHIZ"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasParentJoint"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasPartialColor"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasRightArm"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasSourceLocation"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasSpeechRecognitionEngine"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#involvesAngle"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isBeingTrackedWithinPHIZ"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isComposedByAction"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isObservedByKinectInteraction"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isPerformedByHand"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isProgrammedForFrequency"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isTargetOfKinectInteraction"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#observesHand"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#performsControl"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#performsExercise"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#recognizesSpeech"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#representedInSkeleton"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#representsUser"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#suppliedBy"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#suppliesInteractionFrame"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#targetsControl"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#wasPerformedWithIntensity"/>
+    </AsymmetricObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#activatedByInteraction"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#bindsToControl"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#creates3DModel"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#createsVolume"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#detectsUser"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#executesBodyMovement"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#executesObjectAction"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#generatedBy"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#generatesInteractionStream"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasArm"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasArmState"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasAvgQuality"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasBeamforming"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasBoneHierarchy"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasChildJoint"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasColour"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasCurrentLocation"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasCurrentOrientation"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasDifficulty"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasHand"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasHandState"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasIndication"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasInitialStartingFrame"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasLanguage"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasLeftArm"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasLoadedGrammar"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasLocationDirection"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasLocationWithinPHIZ"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasParentJoint"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasPartialColor"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasPrimaryHand"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasRightArm"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasSourceLocation"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasSpeechRecognitionEngine"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#involvesAngle"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isBeingTrackedWithinPHIZ"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isComposedByAction"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isObservedByKinectInteraction"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isPerformedByHand"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isProgrammedForFrequency"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isTargetOfKinectInteraction"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#observesHand"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#performsControl"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#performsExercise"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#recognizesSpeech"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#representedInSkeleton"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#representsUser"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#suppliedBy"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#suppliesInteractionFrame"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#targetsControl"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#wasPerformedWithIntensity"/>
+    </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#activatedByInteraction"/>
+        <Class IRI="#Control"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#bindsToControl"/>
+        <Class IRI="#KinectInteraction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#creates3DModel"/>
+        <Class IRI="#KinectSensor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#createsVolume"/>
+        <Class IRI="#Kinect3DModel"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#detectsUser"/>
+        <Class IRI="#KinectSensor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#executesBodyMovement"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#executesObjectAction"/>
+        <Class IRI="#Object"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#generatedBy"/>
+        <Class IRI="#Frame"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#generatesInteractionStream"/>
+        <Class IRI="#KinectInteraction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasArm"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasArmState"/>
+        <Class IRI="#KinectInteraction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAvgQuality"/>
+        <Class IRI="#Exercise"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBeamforming"/>
+        <Class IRI="#KinectAudio"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasBoneHierarchy"/>
+        <Class IRI="#Skeleton"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasChildJoint"/>
+        <Class IRI="#Bone"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasColour"/>
+        <Class IRI="#Object"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCurrentLocation"/>
+        <Class IRI="#KinectSensor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCurrentOrientation"/>
+        <Class IRI="#KinectSensor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDifficulty"/>
+        <Class IRI="#Exercise"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasHand"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasHandState"/>
+        <Class IRI="#Hand"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasIndication"/>
+        <Class IRI="#Exercise"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasInitialStartingFrame"/>
+        <Class IRI="#KinectSensor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLanguage"/>
+        <Class IRI="#KinectAudio"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLeftArm"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLoadedGrammar"/>
+        <Class IRI="#SpeechRecognitionEngine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLocationDirection"/>
+        <Class IRI="#Speech"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLocationWithinPHIZ"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasParentJoint"/>
+        <Class IRI="#Bone"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPartialColor"/>
+        <Class IRI="#Object"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPrimaryHand"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRightArm"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSourceLocation"/>
+        <Class IRI="#KinectAudio"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSpeechRecognitionEngine"/>
+        <Class IRI="#KinectSensor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#involvesAngle"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isBeingTrackedWithinPHIZ"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isComposedByAction"/>
+        <Class IRI="#Exercise"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isObservedByKinectInteraction"/>
+        <Class IRI="#Hand"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPerformedByHand"/>
+        <Class IRI="#Control"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isProgrammedForFrequency"/>
+        <Class IRI="#Exercise"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isTargetOfKinectInteraction"/>
+        <Class IRI="#Control"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#observesHand"/>
+        <Class IRI="#KinectInteraction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#performsControl"/>
+        <Class IRI="#Hand"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#performsExercise"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#recognizesSpeech"/>
+        <Class IRI="#SpeechRecognitionEngine"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#representedInSkeleton"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#representsUser"/>
+        <Class IRI="#Skeleton"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#suppliedBy"/>
+        <Class IRI="#Frame"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#suppliesInteractionFrame"/>
+        <Class IRI="#InteractionStream"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#targetsControl"/>
+        <Class IRI="#KinectInteraction"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#wasPerformedWithIntensity"/>
+        <Class IRI="#BodyMovement"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#activatedByInteraction"/>
+        <Class IRI="#KinectInteraction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#bindsToControl"/>
+        <Class IRI="#Control"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#creates3DModel"/>
+        <Class IRI="#Kinect3DModel"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#createsVolume"/>
+        <Class IRI="#Kinect3DVolume"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#detectsUser"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#executesBodyMovement"/>
+        <Class IRI="#BodyMovement"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#executesObjectAction"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#generatedBy"/>
+        <Class IRI="#KinectInteraction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#generatesInteractionStream"/>
+        <Class IRI="#InteractionStream"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasArm"/>
+        <Class IRI="#Arm"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasArmState"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAvgQuality"/>
+        <Class IRI="#ExerciseQuality"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBeamforming"/>
+        <Class IRI="#Beamforming"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasBoneHierarchy"/>
+        <Class IRI="#BoneJoint"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasChildJoint"/>
+        <Class IRI="#BoneJoint"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasColour"/>
+        <Class IRI="#Colour"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCurrentLocation"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCurrentOrientation"/>
+        <Class IRI="#Orientation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDifficulty"/>
+        <Class IRI="#ExerciseDifficulty"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasHand"/>
+        <Class IRI="#Hand"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasHandState"/>
+        <Class IRI="#HandState"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasIndication"/>
+        <Class IRI="#Indication"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasInitialStartingFrame"/>
+        <Class IRI="#Frame"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLanguage"/>
+        <Class IRI="#Language"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLeftArm"/>
+        <Class IRI="#Arm"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLoadedGrammar"/>
+        <Class IRI="#Grammar"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLocationDirection"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLocationWithinPHIZ"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasParentJoint"/>
+        <Class IRI="#BoneJoint"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPartialColor"/>
+        <Class IRI="#Colour"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPrimaryHand"/>
+        <Class IRI="#Hand"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRightArm"/>
+        <Class IRI="#Arm"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSourceLocation"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSpeechRecognitionEngine"/>
+        <Class IRI="#SpeechRecognitionEngine"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#involvesAngle"/>
+        <Class IRI="#Angle"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isBeingTrackedWithinPHIZ"/>
+        <Class IRI="#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isComposedByAction"/>
+        <Class IRI="#Action"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isObservedByKinectInteraction"/>
+        <Class IRI="#KinectInteraction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPerformedByHand"/>
+        <Class IRI="#Hand"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isProgrammedForFrequency"/>
+        <Class IRI="#ExerciseFrequency"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isTargetOfKinectInteraction"/>
+        <Class IRI="#KinectInteraction"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#observesHand"/>
+        <Class IRI="#Hand"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#performsControl"/>
+        <Class IRI="#Control"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#performsExercise"/>
+        <Class IRI="#Exercise"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#recognizesSpeech"/>
+        <Class IRI="#Speech"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#representedInSkeleton"/>
+        <Class IRI="#Skeleton"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#representsUser"/>
+        <Class IRI="#User"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#suppliedBy"/>
+        <Class IRI="#InteractionStream"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#suppliesInteractionFrame"/>
+        <Class IRI="#Frame"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#targetsControl"/>
+        <Class IRI="#Control"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#wasPerformedWithIntensity"/>
+        <Class IRI="#ExerciseIntensity"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#containsVolumeInL"/>
+        <DataProperty IRI="#hasObjectMeasurement"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hadAngleValue"/>
+        <DataProperty IRI="#hasAngleProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hadAvgTimePerRepetition"/>
+        <DataProperty IRI="#hasExerciseProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasActiveTrackingMode"/>
+        <DataProperty IRI="#hasState"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasAngleDatetime"/>
+        <DataProperty IRI="#hasAngleProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasAngleValue"/>
+        <DataProperty IRI="#hasAngleProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasApertureAngle"/>
+        <DataProperty abbreviatedIRI=":topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasDateTime"/>
+        <DataProperty IRI="#hasAngleProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasDescription"/>
+        <DataProperty IRI="#hasExerciseProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasExerciseProperty"/>
+        <DataProperty abbreviatedIRI=":topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasHeightInCm"/>
+        <DataProperty IRI="#hasObjectMeasurement"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasLongitudeInCm"/>
+        <DataProperty IRI="#hasObjectMeasurement"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasNVoxels"/>
+        <DataProperty abbreviatedIRI=":topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasOrientationX"/>
+        <DataProperty IRI="#hasOrientationProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasOrientationY"/>
+        <DataProperty IRI="#hasOrientationProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasOrientationZ"/>
+        <DataProperty IRI="#hasOrientationProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasSize"/>
+        <DataProperty abbreviatedIRI=":topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasSpatialRelation"/>
+        <DataProperty abbreviatedIRI=":topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasTimestamp"/>
+        <DataProperty abbreviatedIRI=":topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasValue"/>
+        <DataProperty IRI="#hasAngleProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasVolumeInM3"/>
+        <DataProperty abbreviatedIRI=":topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasWidth"/>
+        <DataProperty abbreviatedIRI=":topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasWidthInCm"/>
+        <DataProperty IRI="#hasObjectMeasurement"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#hasWidthInM"/>
+        <DataProperty abbreviatedIRI=":topDataProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#headNeckAngle"/>
+        <DataProperty IRI="#hasAngleProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#isActive"/>
+        <DataProperty IRI="#hasState"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#isCaptured"/>
+        <DataProperty IRI="#hasState"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#isPrimaryHand"/>
+        <DataProperty IRI="#hasState"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#isPrimaryUser"/>
+        <DataProperty IRI="#hasState"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#isProgrammedForDurationInHour"/>
+        <DataProperty IRI="#hasExerciseProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#isProgrammedForDurationInMin"/>
+        <DataProperty IRI="#hasExerciseProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#isProgrammedForDurationInSec"/>
+        <DataProperty IRI="#hasExerciseProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#isProgrammedForNRepetitions"/>
+        <DataProperty IRI="#hasExerciseProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#isTracked"/>
+        <DataProperty IRI="#hasState"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#shouldBeExactlyInDegrees"/>
+        <DataProperty IRI="#hasAngleProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#shouldBeMaxInDegrees"/>
+        <DataProperty IRI="#hasAngleProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#shouldBeMinInDegrees"/>
+        <DataProperty IRI="#hasAngleProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#spineLeftKneeAngle"/>
+        <DataProperty IRI="#hasAngleProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#spineRightKneeAngle"/>
+        <DataProperty IRI="#hasAngleProperty"/>
+    </SubDataPropertyOf>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#wasRepeatedNTimes"/>
+        <DataProperty abbreviatedIRI=":topDataProperty"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#containsVolumeInL"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hadAngleValue"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasActiveTrackingMode"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasAngleDatetime"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasAngleValue"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasApertureAngle"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasConfidenceLevel"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasConfidenceThreshold"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasDateTime"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasDescription"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasEndDateTime"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasGrammarDefinitionXMLFile"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasHeightInCm"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasLongitudeInCm"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasNVoxels"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasOrientationX"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasOrientationY"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasOrientationZ"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasRecognitionAccuracy"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasSize"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasSpatialRelation"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasStartDateTime"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasTimestamp"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasUserID"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasValue"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasVolumeInM3"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasVoxelResolution"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasWidth"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasWidthInCm"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasWidthInM"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#headNeckAngle"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#isActive"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#isAimedAtAgeGroup"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#isCaptured"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#isPrimaryHand"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#isPrimaryUser"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#isProgrammedForDurationInHour"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#isProgrammedForDurationInMin"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#isProgrammedForDurationInSec"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#isProgrammedForNRepetitions"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#isTracked"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#shouldBeExactlyInDegrees"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#shouldBeMaxInDegrees"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#shouldBeMinInDegrees"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#spineLeftKneeAngle"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#spineRightKneeAngle"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#usesAlgorithmAlignDepthToReconstruction"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#usesAlgorithmNuiFusionAlignPointClouds"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#wasRepeatedNTimes"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#containsVolumeInL"/>
+        <Class IRI="#Object"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hadAngleValue"/>
+        <Class IRI="#Angle"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hadAvgTimePerRepetition"/>
+        <Class IRI="#BodyMovement"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasActiveTrackingMode"/>
+        <Class IRI="#KinectSensor"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAngleDatetime"/>
+        <Class IRI="#Angle"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasAngleValue"/>
+        <Class IRI="#Angle"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasApertureAngle"/>
+        <ObjectUnionOf>
+            <Class IRI="#Book"/>
+            <Class IRI="#Door"/>
+            <Class IRI="#Window"/>
+        </ObjectUnionOf>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasConfidenceLevel"/>
+        <Class IRI="#Speech"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasConfidenceThreshold"/>
+        <Class IRI="#SpeechRecognitionEngine"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDateTime"/>
+        <Class IRI="#Angle"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDescription"/>
+        <Class IRI="#Exercise"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDescription"/>
+        <Class IRI="#Indication"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasEndDateTime"/>
+        <Class IRI="#BodyMovement"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasGrammarDefinitionXMLFile"/>
+        <Class IRI="#Grammar"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasHeightInCm"/>
+        <Class IRI="#Object"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasKinectAudioSource"/>
+        <Class IRI="#KinectAudio"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLongitudeInCm"/>
+        <Class IRI="#Object"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasNVoxels"/>
+        <Class IRI="#Object"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasObjectMeasurement"/>
+        <Class IRI="#Object"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasOrientationProperty"/>
+        <Class IRI="#Orientation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasOrientationX"/>
+        <Class IRI="#Orientation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasOrientationY"/>
+        <Class IRI="#Orientation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasOrientationZ"/>
+        <Class IRI="#Orientation"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasRecognitionAccuracy"/>
+        <Class IRI="#Speech"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSize"/>
+        <Class IRI="#Kinect3DModel"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasSpatialRelation"/>
+        <Class IRI="#Object"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasStartDateTime"/>
+        <Class IRI="#BodyMovement"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTimestamp"/>
+        <Class IRI="#Image"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasUserID"/>
+        <Class IRI="#User"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasValue"/>
+        <Class IRI="#Angle"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasVolumeInM3"/>
+        <Class IRI="#User"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasVoxelResolution"/>
+        <Class IRI="#User"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasWidth"/>
+        <Class IRI="#User"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasWidthInCm"/>
+        <Class IRI="#Object"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasWidthInM"/>
+        <Class IRI="#User"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#headNeckAngle"/>
+        <Class IRI="#Angle"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isActive"/>
+        <Class IRI="#User"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isAimedAtAgeGroup"/>
+        <Class IRI="#Exercise"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isCaptured"/>
+        <Class IRI="#Hand"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isInteractive"/>
+        <Class IRI="#Hand"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isPrimaryHand"/>
+        <Class IRI="#Hand"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isPrimaryUser"/>
+        <Class IRI="#Hand"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isProgrammedForDurationInHour"/>
+        <Class IRI="#Exercise"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isProgrammedForDurationInMin"/>
+        <Class IRI="#Exercise"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isProgrammedForDurationInSec"/>
+        <Class IRI="#Exercise"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isProgrammedForNRepetitions"/>
+        <Class IRI="#Exercise"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isTracked"/>
+        <Class IRI="#Hand"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#shouldBeExactlyInDegrees"/>
+        <Class IRI="#Angle"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#shouldBeMaxInDegrees"/>
+        <Class IRI="#Angle"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#shouldBeMinInDegrees"/>
+        <Class IRI="#Angle"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#spineLeftKneeAngle"/>
+        <Class IRI="#Angle"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#spineRightKneeAngle"/>
+        <Class IRI="#Angle"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#usesAlgorithmAlignDepthToReconstruction"/>
+        <Class IRI="#Kinect3DModel"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#usesAlgorithmNuiFusionAlignPointClouds"/>
+        <Class IRI="#Kinect3DModel"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#wasRepeatedNTimes"/>
+        <Class IRI="#BodyMovement"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#containsVolumeInL"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hadAngleValue"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hadAvgTimePerRepetition"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasActiveTrackingMode"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAngleDatetime"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasAngleValue"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasApertureAngle"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasConfidenceLevel"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasConfidenceThreshold"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDateTime"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDescription"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasEndDateTime"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasGrammarDefinitionXMLFile"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasHeightInCm"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasKinectAudioSource"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLongitudeInCm"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasNVoxels"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasOrientationProperty"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasOrientationX"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasOrientationY"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasOrientationZ"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasRecognitionAccuracy"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSize"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasSpatialRelation"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasStartDateTime"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTimestamp"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasUserID"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasValue"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasVolumeInM3"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasVoxelResolution"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasWidth"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasWidthInCm"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasWidthInM"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#headNeckAngle"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isActive"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isAimedAtAgeGroup"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isCaptured"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isInteractive"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isPrimaryHand"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isPrimaryUser"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isProgrammedForDurationInHour"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isProgrammedForDurationInMin"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isProgrammedForDurationInSec"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isProgrammedForNRepetitions"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#isTracked"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#shouldBeExactlyInDegrees"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#shouldBeMaxInDegrees"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#shouldBeMinInDegrees"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#spineLeftKneeAngle"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#spineRightKneeAngle"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#usesAlgorithmAlignDepthToReconstruction"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#usesAlgorithmNuiFusionAlignPointClouds"/>
+        <Datatype abbreviatedIRI="xsd:boolean"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#wasRepeatedNTimes"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#BackLowerBone</IRI>
+        <Literal datatypeIRI="&xsd;string">Bone inmediately above the pelvis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Orientation</IRI>
+        <Literal datatypeIRI="&xsd;string">We calculate the orientation of the bones based on the positions of the joints returned by the skeletal tracking pipeline.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasParentJoint</IRI>
+        <Literal datatypeIRI="&xsd;string">This considers the center of the skeleton graph to be the Hip Center bone joint. The extremities are considered branches in a tree.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.2.3.1824) http://owlapi.sourceforge.net -->
+
