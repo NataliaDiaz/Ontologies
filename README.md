@@ -1,7 +1,7 @@
 # Ontologies
 A set of created ontologies for human activity modelling and lifestyle profiling. 
 
-For the human activity recognition ontology, see: https://github.com/NataliaDiaz/HumanActivityRecognitionFuzzyDescriptionLogics/blob/master/README.md
+For the human activity recognition ontology, see: https://github.com/NataliaDiaz/HumanActivityRecognitionFuzzyDescriptionLogics
 
 Related publications: 
 
