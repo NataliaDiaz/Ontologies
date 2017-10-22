@@ -1,0 +1,574 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="file:/C:/Trabajo/Investigación/Artículos%20míos/Preparación/Natalia/kb.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="file:/C:/Trabajo/Investigación/Artículos%20míos/Preparación/Natalia/kb.owl">
+    <Prefix name="" IRI="file:/C:/Trabajo/Investigación/Artículos%20míos/Preparación/Natalia/kb.owl"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="myOntologies" IRI="http://www.semanticweb.org/ontologies/myOntologies.owl#"/>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:AlwaysLate"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:User"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:BarLover"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:DutchWorker"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMinutesAwake"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:Male"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="myOntologies:hasGPSLocation"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:WeekdaySegment"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:AtWork"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:DaySegment"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:SportiveCommuter"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:NightAndMorning"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:Accelerated"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:POIFrequentVisitor"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:ForgetfulStressed"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:DutchLuncher"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDaySegment"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:PetOwner"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:Sedentary"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="myOntologies:hasGender"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:Evening"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:Mailman"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasHeightCm"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:Active"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTossCount"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:Female"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasAvgSleepQuality"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTimesAwaken"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#happensDuringCommuteSegment"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:DayTime"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:TakeItEasy"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:GymAddict"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:Weekend"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:Kindergarden"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:day1segment1"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMinutesUntilFellAsleep"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasWeightKg"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasFloors"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:OutHomeSegment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#runnedNSteps"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:AtHome"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Age"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:CalorieOptimizer"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:Shopaholic"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:Day"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:WeekendSegment"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasMinutesAsleep"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:CommuteToWork"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:NightOwl"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:Gender"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:NotHomeNorWorkSegment"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:Weekday"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:POI"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:PassiveCommuter"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasGSR"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasInmunoDefenseLevel"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:MediterraneanWorker"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:MediterraneanLuncher"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:CommuteSegment"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:CommuteToHome"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasBMI"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:OutHomeAndWorkSegment"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="myOntologies:EarlyBird"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="myOntologies:fuzzyLabel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="myOntologies:hasWalkingR"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="myOntologies:hasMaxHR"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="myOntologies:hasAvgHR"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="myOntologies:hasEndT"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="myOntologies:walkedNSteps"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="myOntologies:spentNCalories"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="myOntologies:hasCyclingR"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="myOntologies:hasRunningDistance"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="myOntologies:hasLunchDuration"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="myOntologies:hasLunchStartT"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="myOntologies:hasCyclingDistance"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="myOntologies:walkedNStepsAtLunch"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="myOntologies:hasStartT"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="myOntologies:hasWalkingDistance"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="myOntologies:hasSleepEndT"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="myOntologies:hasRunningR"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="myOntologies:hasTransportR"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="myOntologies:hasTransportDistance"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="myOntologies:hasSleepStartT"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="myOntologies:hasDuration"/>
+    </Declaration>
+    <SubClassOf>
+        <Class abbreviatedIRI="myOntologies:Accelerated"/>
+        <Class abbreviatedIRI="myOntologies:DaySegment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="myOntologies:Active"/>
+        <Class abbreviatedIRI="myOntologies:DaySegment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="myOntologies:AlwaysLate"/>
+        <Class abbreviatedIRI="myOntologies:DaySegment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="myOntologies:AtHome"/>
+        <Class abbreviatedIRI="myOntologies:DaySegment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="myOntologies:AtWork"/>
+        <Class abbreviatedIRI="myOntologies:WeekdaySegment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="myOntologies:BarLover"/>
+        <Class abbreviatedIRI="myOntologies:OutHomeAndWorkSegment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="myOntologies:CalorieOptimizer"/>
+        <Class abbreviatedIRI="myOntologies:AtWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="myOntologies:CommuteSegment"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="myOntologies:CommuteToHome"/>
+            <Class abbreviatedIRI="myOntologies:CommuteToWork"/>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="myOntologies:CommuteToHome"/>
+        <Class abbreviatedIRI="myOntologies:WeekdaySegment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="myOntologies:CommuteToWork"/>
+        <Class abbreviatedIRI="myOntologies:WeekdaySegment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="myOntologies:DayTime"/>
+        <Class abbreviatedIRI="myOntologies:WeekendSegment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="myOntologies:DutchLuncher"/>
+        <Class abbreviatedIRI="myOntologies:AtWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="myOntologies:DutchWorker"/>
+        <Class abbreviatedIRI="myOntologies:AtWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="myOntologies:EarlyBird"/>
+        <Class abbreviatedIRI="myOntologies:NightAndMorning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="myOntologies:Evening"/>
+        <Class abbreviatedIRI="myOntologies:DaySegment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="myOntologies:Female"/>
+        <Class abbreviatedIRI="myOntologies:User"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="myOntologies:ForgetfulStressed"/>
+        <Class abbreviatedIRI="myOntologies:DaySegment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="myOntologies:GymAddict"/>
+        <Class abbreviatedIRI="myOntologies:OutHomeSegment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="myOntologies:Kindergarden"/>
+        <Class abbreviatedIRI="myOntologies:NotHomeNorWorkSegment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="myOntologies:Mailman"/>
+        <Class abbreviatedIRI="myOntologies:AtWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="myOntologies:Male"/>
+        <Class abbreviatedIRI="myOntologies:User"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="myOntologies:MediterraneanLuncher"/>
+        <Class abbreviatedIRI="myOntologies:AtWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="myOntologies:NightAndMorning"/>
+        <Class abbreviatedIRI="myOntologies:DaySegment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="myOntologies:NightOwl"/>
+        <Class abbreviatedIRI="myOntologies:NightAndMorning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="myOntologies:NotHomeNorWorkSegment"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="myOntologies:CommuteToHome"/>
+            <Class abbreviatedIRI="myOntologies:CommuteToWork"/>
+            <Class abbreviatedIRI="myOntologies:DayTime"/>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="myOntologies:OutHomeSegment"/>
+        <ObjectUnionOf>
+            <Class abbreviatedIRI="myOntologies:AtWork"/>
+            <Class abbreviatedIRI="myOntologies:CommuteToHome"/>
+            <Class abbreviatedIRI="myOntologies:CommuteToWork"/>
+            <Class abbreviatedIRI="myOntologies:DayTime"/>
+        </ObjectUnionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="myOntologies:POIFrequentVisitor"/>
+        <Class abbreviatedIRI="myOntologies:DaySegment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="myOntologies:PassiveCommuter"/>
+        <Class abbreviatedIRI="myOntologies:CommuteSegment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="myOntologies:PetOwner"/>
+        <Class abbreviatedIRI="myOntologies:NightAndMorning"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="myOntologies:Sedentary"/>
+        <Class abbreviatedIRI="myOntologies:DaySegment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="myOntologies:Shopaholic"/>
+        <Class abbreviatedIRI="myOntologies:NotHomeNorWorkSegment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="myOntologies:SportiveCommuter"/>
+        <Class abbreviatedIRI="myOntologies:CommuteSegment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="myOntologies:TakeItEasy"/>
+        <Class abbreviatedIRI="myOntologies:DaySegment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="myOntologies:WeekdaySegment"/>
+        <Class abbreviatedIRI="myOntologies:DaySegment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="myOntologies:WeekendSegment"/>
+        <Class abbreviatedIRI="myOntologies:DaySegment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI="myOntologies:day1segment1"/>
+        <Class abbreviatedIRI="myOntologies:NightAndMorning"/>
+    </SubClassOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="myOntologies:hasGPSLocation"/>
+        <Class abbreviatedIRI="myOntologies:DaySegment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI="myOntologies:hasGender"/>
+        <Class abbreviatedIRI="myOntologies:User"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="myOntologies:hasGPSLocation"/>
+        <Class abbreviatedIRI="myOntologies:POI"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI="myOntologies:hasGender"/>
+        <Class abbreviatedIRI="myOntologies:Gender"/>
+    </ObjectPropertyRange>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#happensDuringCommuteSegment"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasAvgSleepQuality"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasBMI"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasDaySegment"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasFloors"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasGSR"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasHeightCm"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasInmunoDefenseLevel"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasMinutesAsleep"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasMinutesAwake"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasMinutesUntilFellAsleep"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasTimesAwaken"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasTossCount"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#hasWeightKg"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#runnedNSteps"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="myOntologies:hasAvgHR"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="myOntologies:hasCyclingDistance"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="myOntologies:hasCyclingR"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="myOntologies:hasDuration"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="myOntologies:hasEndT"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="myOntologies:hasLunchDuration"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="myOntologies:hasLunchStartT"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="myOntologies:hasMaxHR"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="myOntologies:hasRunningDistance"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="myOntologies:hasRunningR"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="myOntologies:hasSleepEndT"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="myOntologies:hasSleepStartT"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="myOntologies:hasStartT"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="myOntologies:hasTransportDistance"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="myOntologies:hasTransportR"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="myOntologies:hasWalkingDistance"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="myOntologies:hasWalkingR"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="myOntologies:spentNCalories"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="myOntologies:walkedNSteps"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty abbreviatedIRI="myOntologies:walkedNStepsAtLunch"/>
+    </FunctionalDataProperty>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="myOntologies:fuzzyLabel"/>
+        <AbbreviatedIRI>myOntologies:class__1</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&lt;fuzzyOwl2 fuzzyType=&quot;concept&quot;&gt;
+&lt;Concept type=&quot;weightedSum&quot; value=&quot;&quot;&gt;
+ &lt;Concept type=&quot;weighted&quot; value=&quot;0.33&quot; base=&quot;&lt;http://www.semanticweb.org/ontologies/myOntologies.owl#N&gt;&quot; /&gt;
+&lt;Concept type=&quot;weighted&quot; value=&quot;0.33&quot; base=&quot;&lt;http://www.semanticweb.org/ontologies/myOntologies.owl#D&gt;&quot; /&gt;
+&lt;Concept type=&quot;weighted&quot; value=&quot;0.33&quot; base=&quot;&lt;http://www.semanticweb.org/ontologies/myOntologies.owl#E&gt;&quot; /&gt;
+&lt;/Concept&gt;
+&lt;/fuzzyOwl2&gt;</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="myOntologies:fuzzyLabel"/>
+        <AbbreviatedIRI>myOntologies:class__2</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#PlainLiteral">&lt;fuzzyOwl2 fuzzyType=&quot;concept&quot;&gt;
+&lt;Concept type=&quot;weightedSum&quot; value=&quot;&quot;&gt;
+ &lt;Concept type=&quot;weighted&quot; value=&quot;0.2&quot; base=&quot;&lt;http://www.semanticweb.org/ontologies/myOntologies.owl#N&gt;&quot; /&gt;
+&lt;Concept type=&quot;weighted&quot; value=&quot;0.2&quot; base=&quot;&lt;http://www.semanticweb.org/ontologies/myOntologies.owl#C2W&gt;&quot; /&gt;
+&lt;Concept type=&quot;weighted&quot; value=&quot;0.2&quot; base=&quot;&lt;http://www.semanticweb.org/ontologies/myOntologies.owl#W&gt;&quot; /&gt;
+&lt;Concept type=&quot;weighted&quot; value=&quot;0.2&quot; base=&quot;&lt;http://www.semanticweb.org/ontologies/myOntologies.owl#C2H&gt;&quot; /&gt;
+&lt;Concept type=&quot;weighted&quot; value=&quot;0.2&quot; base=&quot;&lt;http://www.semanticweb.org/ontologies/myOntologies.owl#E&gt;&quot; /&gt;
+&lt;/Concept&gt;
+&lt;/fuzzyOwl2&gt;</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
