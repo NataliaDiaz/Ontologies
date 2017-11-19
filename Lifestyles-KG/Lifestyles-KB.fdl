@@ -19,15 +19,31 @@
 (define-primitive-concept Male User)
 
 (define-primitive-concept NightAndMorning DaySegment)
-(define-primitive-concept CommuteToWork WeekdaySegment)
+(define-primitive-concept ToWork WeekdaySegment)  % commute
 (define-primitive-concept AtWork WeekdaySegment)
-(define-primitive-concept CommuteToHome WeekdaySegment)
+(define-primitive-concept ToHome WeekdaySegment)  % commute
 (define-primitive-concept AtHome DaySegment)
 (define-primitive-concept DayTime WeekendSegment)
 (define-primitive-concept Evening DaySegment)
-(define-primitive-concept CommuteSegment (g-or CommuteToWork CommuteToHome))
-(define-primitive-concept OutHomeSegment (g-or AtWork CommuteToHome CommuteToWork DayTime )) # out of home location segments
-(define-primitive-concept NotHomeNorWorkSegment (g-or CommuteToHome CommuteToWork DayTime ))  # free time segments: out of home and work
+
+(define-primitive-concept EveningAfterWork WeekdaySegment)
+(define-primitive-concept FreeDayTime WeekdaySegment)
+(define-primitive-concept EveningAfterFree WeekdaySegment)
+(define-primitive-concept FixedNight DaySegment)
+(define-primitive-concept FixedMorning WeekendSegment)
+(define-primitive-concept FixedAfternoon DaySegment)
+(define-primitive-concept FixedEvening DaySegment)
+(define-primitive-concept WholeDay DaySegment)
+(define-primitive-concept Sleep DaySegment)
+(define-primitive-concept Awake DaySegment)
+(define-primitive-concept Morning DaySegment)
+(define-primitive-concept freeDayTime DaySegment)
+(define-primitive-concept eveningAfterFree DaySegment)
+
+
+(define-primitive-concept CommuteSegment (g-or ToWork ToHome))
+(define-primitive-concept OutHomeSegment (g-or AtWork ToHome ToWork DayTime )) # out of home location segments
+(define-primitive-concept NotHomeNorWorkSegment (g-or ToHome ToWork DayTime ))  # free time segments: out of home and work
 
 (define-primitive-concept Weekday (w-sum (0.2 N)(0.2 C2W)(0.2 W)(0.2 C2H)(0.2 E)))
 (define-primitive-concept Weekend (w-sum (0.33 N)(0.33 D)(0.33 E)))
@@ -216,7 +232,7 @@
 (define-concept CalorieOptimizer (g-and AtWork (some walkedNSteps HighNSteps) (some hasRunningDistance LargerThanZero)(some hasRunningR LargerThanZero)))  ##%
 
 ##%# Worker bringing kids to childcare  # how to integrate the place visited before/after work is kindergarden if not with temporality/external, paralelly running Markov chain? # **Todo create rule for visitsKeyLoc Kindergarden as consequent.
-#(define-concept KidParent (g-and (g-and CommuteToWork (some visitsKindergarden true)) (g-and CommuteToHome (some visitsKindergarden true)))) ##%#**TODO: how to find out?
+#(define-concept KidParent (g-and (g-and ToWork (some visitsKindergarden true)) (g-and ToHome (some visitsKindergarden true)))) ##%#**TODO: how to find out?
 
 # Early bird: a person that leaves home very early
 (define-concept EarlyBird (g-and NightAndMorning (some hasEndT VeryEarlyLeaveHomeTime)(some hasStartT EarlyArriveHomeTime))) #hasSleepEndT EarlyWakeUpTime)))

@@ -60,8 +60,7 @@ Example of output for two columns for day segment (commute) "ToWork":
 
 The basic unit in which a day footprint is divided into is a day segment. Fixed day segments by clock
 0-6, 6-12, 12-18, 18-24h exists, although regular ones such as morning (the time between waking up
-and going to work) are based on behaviour sensing. They are provided with start and end time -in
-minutes-, each of them divided into:
+and going to work) are based on behaviour sensing. They are provided with start and end time -in minutes- and they are commputed by external algorithm that takes into account to compute them the following clusters of locations:
 
 * Home, H – All places user calls ‘Home’ or where the user is last thing in the evening and
 first thing in the morning.
