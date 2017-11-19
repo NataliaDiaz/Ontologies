@@ -72,7 +72,32 @@ commutes to and from or is in the middle of a weekday.
 * Other places, O - All other places that users visit either from H or W. These will often be
 more sporadically visited places, such as restaurants, theaters, museums or other cities.
 
+* Examples of segmentType:
+```
+toHome
+eveningAfterWork
+freeDayTime
+eveningAfterFree
+fixedNight
+fixedMorning
+fixedAfternoon
+fixedEvening
+wholeDay
+sleep
+awake
+morning
+toWork
+atWork
+```
+
+* Datatype (columns) applied clustering on:
+
+```
+startTime	endTime	timestamp	skinTemperature	galvanicSkinResponse	bodyTemperature	weight	heartRate	restingHeartRate	heartRateRecovery	calories	ldlCholesterol	hdlCholesterol	vldlCholesterol	triglycerides	fatPercentage	breathingRate	bloodGlucose	bloodPressureSystolic	bloodPressureDiastolic	bloodOxygen	energyLevel	steps	stepDistance	stepSpeed	sleepState	sleepTossTurn	elevation	floors	waistCircumference	locationLongitude	locationLatitude	mood	userId	placeId	activityId	mealId	sleepRating	activeEnergyExpenditure	moodStrength	activityStart	activityDuration	activityDistance	activityTypeId	activityCode	placeName	placeLocationLongitude	placeLocationLatitude	movesId	fourSquareId	placeTypeId	placeCode	measurementDate	measurementTime	maxHeartRate	vO2max	energyIntake	mealSize	foodGroup	activeMinutes	lsg_speed	lsg_latitude	lsg_longitude	lsg_cleansteps	lsg_AID	lsg_MET	lsg_wear	weekday	dayType	sedentaryRatio	walkingRatio	cyclingRatio	transportRatio	sedentaryMaxDur	walkingMaxDur	cyclingMaxDur	transportMaxDur
+```
+
 * Weekday SUNDAY = 1;... SATURDAY = 7;
+
 
 
 ## Data used for learning the fuzzy datatypes:
