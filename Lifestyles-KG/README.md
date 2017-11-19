@@ -6,8 +6,11 @@ Lifestyles-KB.owl is an equivalent crisp  sub-version of the fuzzy one
 
 The ontology is described in:
 
-
 [1] Couch potato or gym addict? Semantic lifestyle profiling with wearables and knowledge graphs. Natalia ~Díaz-Rodríguez, Aki Härmä, Ignacio Huitzil, Rim Helaoui, Fernando Bobillo and Umberto Straccia. Submitted to NIPS workshop on Automatic Knowledge Base Construction, 2017, Long Beach, CA.
+
+
+![alt text](https://github.com/NataliaDiaz/Ontologies/blob/master/Lifestyles-KG/Lifestyles-KB-documentation.png)
+
 
 ## Running the clustering algorithms for fuzzy datatype learning:
 
