@@ -28,8 +28,8 @@ To run the 3 clustering algorithms:
 
 ```
 >java -jar FuzzyDatatypeLearner.jar 1     # option 1: fuzzy-k means clustering
->java -jar FuzzyDatatypeLearner.jar 2     #option 2: k means clustering
->java -jar FuzzyDatatypeLearner.jar 3     #option 3: Mean-shift clustering
+>java -jar FuzzyDatatypeLearner.jar 2     # option 2: k means clustering
+>java -jar FuzzyDatatypeLearner.jar 3     # option 3: Mean-shift clustering
 ```
 
 To save the datatypes into a fuzzyDL ontology file .fdl, we can run
@@ -40,20 +40,46 @@ java -jar FuzzyDatatypeLearner.jar 1  >>  fuzzOnt.fdl
 
 Example of output for two columns for day segment (commute) "ToWork":
 ```
-  -----------------------------------------------------------------------
- % DataProperty: SkinTemperature SegmentType: ToWork
- % Learnt using mean-shift
- % Centroids results: [4.9][18.7][32.6]
- (define-fuzzy-concept LowSkinTemperatureToWork left-shoulder(-10000,10000,4.9,18.7))
- (define-fuzzy-concept NeutralSkinTemperatureToWork triangular(-10000,10000,4.9,18.7,32.6))
- (define-fuzzy-concept HighSkinTemperatureToWork right-shoulder(-10000,10000,18.7,32.6))
- % -----------------------------------------------------------------------
- % DataProperty: SkinTemperature SegmentType: Morning
- % Learnt using mean-shift
- % Centroids results: [10.7][33.2]
- (define-fuzzy-concept Label-1SkinTemperatureMorning left-shoulder(-10000,10000,10.7,33.2))
- (define-fuzzy-concept Label0SkinTemperatureMorning right-shoulder(-10000,10000,10.7,33.2))
- %-----------------------------------------------------------------------
+% -----------------------------------------------------------------------
+% DataProperty: StartTime SegmentType: ToHome
+% Learnt using k-means
+% Centroids results: [518.4][679.19][860.11][1055.57][1182.31]
+(define-fuzzy-concept VeryLowStartTimeToHome left-shoulder(-10000,10000,518.4,679.19))
+(define-fuzzy-concept LowStartTimeToHome triangular(-10000,10000,518.4,679.19,860.11))
+(define-fuzzy-concept NeutralStartTimeToHome triangular(-10000,10000,679.19,860.11,1055.57))
+(define-fuzzy-concept HighStartTimeToHome triangular(-10000,10000,860.11,1055.57,1182.31))
+(define-fuzzy-concept VeryHigStartTimeToHome right-shoulder(-10000,10000,1055.57,1182.31))
+% -----------------------------------------------------------------------
+% DataProperty: StartTimeFixedNight has 0 data
+% -----------------------------------------------------------------------
+% DataProperty: StartTime SegmentType: AtWork
+% Learnt using k-means
+% Centroids results: [574.46][679.88][826.07][1037.87][1274.0]
+(define-fuzzy-concept VeryLowStartTimeAtWork left-shoulder(-10000,10000,574.46,679.88))
+(define-fuzzy-concept LowStartTimeAtWork triangular(-10000,10000,574.46,679.88,826.07))
+(define-fuzzy-concept NeutralStartTimeAtWork triangular(-10000,10000,679.88,826.07,1037.87))
+(define-fuzzy-concept HighStartTimeAtWork triangular(-10000,10000,826.07,1037.87,1274.0))
+(define-fuzzy-concept VeryHigStartTimeAtWork right-shoulder(-10000,10000,1037.87,1274.0))
+% -----------------------------------------------------------------------
+% DataProperty: Timestamp SegmentType: AtWork
+% Learnt using k-means
+% Centroids results: [736271.63][736296.5][736352.69][736394.5][736408.5]
+(define-fuzzy-concept VeryLowTimestampAtWork left-shoulder(-10000,10000,736271.63,736296.5))
+(define-fuzzy-concept LowTimestampAtWork triangular(-10000,10000,736271.63,736296.5,736352.69))
+(define-fuzzy-concept NeutralTimestampAtWork triangular(-10000,10000,736296.5,736352.69,736394.5))
+(define-fuzzy-concept HighTimestampAtWork triangular(-10000,10000,736352.69,736394.5,736408.5))
+(define-fuzzy-concept VeryHigTimestampAtWork right-shoulder(-10000,10000,736394.5,736408.5))
+% -----------------------------------------------------------------------
+% DataProperty: SkinTemperature SegmentType: ToWork
+% Learnt using k-means
+% Centroids results: [4.9][15.19][22.02][30.6][34.0]
+(define-fuzzy-concept VeryLowSkinTemperatureToWork left-shoulder(-10000,10000,4.9,15.19))
+(define-fuzzy-concept LowSkinTemperatureToWork triangular(-10000,10000,4.9,15.19,22.02))
+(define-fuzzy-concept NeutralSkinTemperatureToWork triangular(-10000,10000,15.19,22.02,30.6))
+(define-fuzzy-concept HighSkinTemperatureToWork triangular(-10000,10000,22.02,30.6,34.0))
+(define-fuzzy-concept VeryHigSkinTemperatureToWork right-shoulder(-10000,10000,30.6,34.0))
+% -----------------------------------------------------------------------
+
 ```
 
 ## Some notes about Day Segments and other datatypes:  
@@ -62,13 +88,14 @@ The basic unit in which a day footprint is divided into is a day segment. Fixed 
 0-6, 6-12, 12-18, 18-24h exists, although regular ones such as morning (the time between waking up
 and going to work) are based on behaviour sensing. They are provided with start and end time -in minutes- and they are commputed by external algorithm that takes into account to compute them the following clusters of locations:
 
-* Home, H – All places user calls ‘Home’ or where the user is last thing in the evening and
+* Home, H – All places user calls ‘Home’ or where the user is last thing in the evening and
 first thing in the morning.
-* Work, W – All places the user calls ‘Work’, ‘Philips’, ‘HTC’ or where the user regularly
+* Work, W – All places the user calls ‘Work’, ‘Philips’, ‘HTC’ or where the user regularly
 commutes to and from or is in the middle of a weekday.
-* Key points, K – Frequented places in W <–> H transfers where the user regularly stops at
+* Key points, K – Frequented places in W <–> H transfers where the user regularly stops at
 (kindergarten, supermarket, fitness centre). K has no loops.
-* Other places, O - All other places that users visit either from H or W. These will often be
+
+* Other places, O - All other places that users visit either from H or W. These will often be
 more sporadically visited places, such as restaurants, theaters, museums or other cities.
 
 * Examples of segmentType:
